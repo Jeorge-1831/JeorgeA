@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<style>
+body{
+  background-color: #00FFFF;
+
+}
+</style>
+<body>
+  <hr>
+ <main>
+    <h1 align="center">L O G I N</h1>   
+    
+    <br>
+    <div></div>
+    <form action="rockpaper.html" name="login">
+      <table align="center">
+        <tr>
+          <td><p>Username: </p></td>
+          <td><input type="text" name="userid"/></td>
+        </tr>
+
+        <tr>
+          <td><p>Password: </p></td>
+          <td><input type="password" name="pswrd"/></td>    
+        </tr>
+        <tr>
+          <td height="10px"> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" onclick="check(this.form)" value="Login"/></td>
+        
+      </table>  
+    </form>
+    <br>
+  </main>
+  <hr>
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "jeorgeeee" && form.pswrd.value == "misile1831")
+  {
+    alert('Correct Password!'); 
+    location.href="rockpaper.html";
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+</body>
+</html>
